@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Angular Routes Bootstrap</title>
+  <script src="vendors/angular.min.js" charset="utf-8"></script>
+  <script src="vendors/angular-route.min.js" charset="utf-8"></script>
+  <script src="scripts/app.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="vendors/bootstrap.min.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <base href="/" />
+</head>
+
+<body>
+  <h1>My Favorite Heroes</h1>
+  <main class="container" ng-app="routeApp">
+    <div class="row">
+      <div id="buttonLinks" class="col-md-offset-3 col-md-6">
+
+        <a class="btn btn-danger col-md-3" href="/#!/harry-potter" name="harry-potter">Harry Potter</a>
+        <a class="btn btn-danger col-md-3 col-md-offset-1" href="/#!/indiana-jones" name="indiana-jones">Indiana Jones</a>
+        <a class="btn btn-danger col-md-3 col-md-offset-1" href="/#!/wolverine" name="wolverine">Wolverine</a>
+      </div>
+    </div>
+    <ng-view></ng-view>
+    <footer>
+      <h3>By Alessandro. All images Copyright.</h3>
+    </footer>
+
+  </main>
+</body>
+
+</html>
